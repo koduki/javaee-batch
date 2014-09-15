@@ -16,7 +16,8 @@ public class Main {
 
     public static void main(String[] args) throws NamingException {
         try (EJBContainer container = EJBContainer.createEJBContainer()) {
-            MainLogic logic = (MainLogic) container.getContext().lookup("java:global/classes/MainLogic");
+            String jndi = "java:global/javaee-batch/MainLogic";
+            MainLogic logic = (MainLogic) container.getContext().lookup(jndi);
             logic.run();
         }
     }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+    <module-name>javaee-batch</module-name>
+    <data-source>
+        <name>pascal.orz.cn_JavaEE-Batch_jar_1.0-SNAPSHOTPU</name>
+        <class-name>org.apache.derby.jdbc.ClientDriver</class-name>
+        <server-name>localhost</server-name>
+        <port-number>1527</port-number>
+        <database-name>sample</database-name>
+        <user>app</user>
+        <password>app</password>
+        <property>
+            <name>connectionAttributes</name>
+            <value>;create=true</value>
+        </property>
+    </data-source>
+</ejb-jar>
